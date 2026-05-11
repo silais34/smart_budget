@@ -1,16 +1,70 @@
-# smart_budget
+# 💰 SmartBudget
 
-A new Flutter project.
+Kullanıcıların gelir-giderlerini takip ederek harcama alışkanlıklarını analiz etmelerini ve tasarruf için akıllı öneriler almalarını sağlayan Flutter mobil uygulaması.
 
-## Getting Started
+## 📱 Ekran Görüntüleri
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="screenshots/home_screen.png" width="250" />
+  <img src="screenshots/add_transaction.png" width="250" />
+  <img src="screenshots/analytics_screen.png" width="250" />
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Özellikler
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📊 **Gelir/Gider Yönetimi:** Günlük finansal hareketlerin takibi ve grafiksel analizi.
+- 💡 **Akıllı Öneriler:** Harcama alışkanlıklarına göre tasarruf ipuçları ve uyarılar.
+- 🔍 **Gelişmiş Filtreleme:** Kategori ve tarih bazlı detaylı sorgulama.
+- 🌓 **Tema Desteği:** Karanlık ve aydınlık mod seçeneği.
+- 💾 **Offline Çalışma:** SQLite entegrasyonu ile internet gerektirmeden kullanım.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Teknolojiler
+
+- **Framework:** Flutter
+- **State Management:** Provider
+- **Database:** SQLite
+- **Charts:** fl_chart
+
+## 🏗️ Mimari
+
+Proje, sürdürülebilirlik ve test edilebilirlik için **Katmanlı Mimari (Layered Architecture)** yapısı kullanılarak geliştirilmiştir:
+
+- **Models:** Veri yapıları ve SQLite eşleme sınıfları.
+- **Views:** Flutter UI bileşenleri ve ekran tasarımları.
+- **Providers:** İş mantığı (Business Logic) ve state yönetimi.
+- **Services:** SQLite veritabanı işlemleri ve veri erişim katmanı.
+- **Utils:** Sabitler, temalar ve yardımcı fonksiyonlar.
+
+## 🚀 Kurulum
+
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+
+```bash
+# Projeyi klonlayın
+git clone [https://github.com/silais34/smart_budget.git](https://github.com/silais34/smart_budget.git)
+
+# Proje dizinine gidin
+cd smart_budget
+
+# Bağımlılıkları yükleyin
+flutter pub get
+
+# Uygulamayı çalıştırın
+flutter run
+
+lib/
+├── models/         # Veri modelleri
+├── providers/      # State yönetimi
+├── screens/        # UI Ekranları
+├── services/       # Veritabanı servisleri
+├── utils/          # Yardımcı araçlar
+└── widgets/        # Özel UI bileşenleri
+
+👨‍💻 Geliştirici
+Sıla İs Bilgisayar Mühendisliği Öğrencisi | Software Developer
+
+GitHub: @silais34
+
+LinkedIn: linkedin.com/in/sıla-is
+
+E-posta: sila.is@icloud.com
