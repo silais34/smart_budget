@@ -1,0 +1,38 @@
+name: smart_budget
+description: Akıllı harcama analiz ve finans yönetimi uygulaması
+publish_to: 'none' # Bu paket yayınlanmayacak, sadece yerel proje için
+
+version: 1.0.0+1 # Uygulamanın sürümü
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Projenin çalışacağı Dart SDK aralığı
+
+dependencies: # Uygulamanın çalışması için gerekli paketler
+  flutter:
+    sdk: flutter
+  
+  # UI bileşenleri
+  cupertino_icons: ^1.0.6 # iOS tarzı ikonlar
+  google_fonts: ^6.1.0 # Google fontları kullanmak için
+  
+  # State management
+  provider: ^6.1.1 # Uygulama genelinde veri yönetimi için
+  
+  # Database
+  sqflite: ^2.3.0 # SQLite veritabanı için
+  path: ^1.8.3 # Dosya yollarını yönetmek için (veritabanı ile birlikte)
+  
+  # Charts
+  fl_chart: ^0.65.0 # Grafik ve chart oluşturmak için
+  
+  # Date Formatting
+  intl: ^0.18.1 # Tarih ve saat formatlarını yönetmek için
+
+dev_dependencies: # Geliştirme sırasında kullanılan paketler
+  flutter_test:
+    sdk: flutter # Flutter testleri için
+  flutter_launcher_icons: ^0.13.1 # Uygulama iconlarını oluşturmak için
+  flutter_native_splash: ^2.3.5 # Splash screen oluşturmak için
+
+flutter:
+  uses-material-design: true # Material tasarım bileşenlerini kullanmak için
